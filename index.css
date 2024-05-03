@@ -31,14 +31,14 @@ body{
 }
 
 div.main{
-    display: grid;
-    align-items: center;
-    grid-template-columns:auto auto;
-    grid-template-rows: 500px;
+    display:grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    margin-top: 200px;
-    min-width:370px ;
-    max-width: 1440px;
+    margin-top: 100px;
+    /*min-width:370px ;
+    max-width: 1440px;*/
 }
 
 /* result */
@@ -207,15 +207,6 @@ button:hover{
 
 .overall{
     color: hsl(241, 100%, 89%);
-}
-#web{
-    display:block;
-    position:fixed;
-    color:var(--darkGrayBlue);
-    text-decoration: none;
-}
-#web:hover{
-    color:var(--lightRed);
 }
 
 /*media*/

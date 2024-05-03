@@ -1,0 +1,225 @@
+:root{
+    --primary:hsla(256, 72%, 46%, 1);
+
+    --secondary:hsla(241, 72%, 46%, 0);
+
+    --lightSlateBlue: hsl(252, 100%, 67%);
+
+    --lightRoyalBlue: hsl(241, 81%, 54%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --paleBlue: hsl(221, 100%, 96%);
+
+    --lightLavender: hsl(241, 100%, 89%);
+
+    --darkGrayBlue: hsl(224, 30%, 27%);
+
+     --darkGrayBlue: hsl(224, 30%, 27%);
+
+--lightRed: hsl(0, 100%, 67%);
+
+--orangeyYellow: hsl(39, 100%, 56%);
+
+--greenTeal: hsl(166, 100%, 37%);
+
+--cobaltBlue: hsl(234, 85%, 45%);
+
+}
+body{
+    background-color:hsla(221, 100%, 96%,0.3);
+}
+
+div.main{
+    display: grid;
+    align-items: center;
+    grid-template-columns:auto auto;
+    grid-template-rows: 500px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin-top: 200px;
+    min-width:370px ;
+    max-width: 1440px;
+}
+
+/* result */
+
+
+h4{
+    color:var(--lightLavender);
+}
+h3{
+    color:var(--White)
+}
+
+p{
+    font-size:18px ;
+    color:hsl(241, 100%, 89%);
+}
+
+
+div.result{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background:linear-gradient(
+         to bottom,
+        hsl(252, 100%, 67%),
+        hsl(234, 85%, 45%)
+    );
+text-align: center;
+margin-left:0 auto;
+margin-right:0 auto;
+border-radius: 1rem 1rem 1rem 1rem;
+    
+}
+
+.circle{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    width:200px;
+    height: 200px;
+    background:linear-gradient(
+        to bottom,
+        hsla(256, 72%, 46%, 1),
+        hsla(241, 72%, 46%, 0)
+    );
+    border-radius:50%;
+    margin-left:0 auto;
+    margin-right:0 auto;
+
+}
+.score{
+    margin-top:50px;
+    color:var(--White);
+    font-weight: 800;
+    font-size: 80px;
+}
+.test{
+    color:var(--lightLavender);
+}
+
+
+                       /*summary*/  
+
+
+.container{
+    background-color: var(--White);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-bottom: 30px;
+    box-shadow: 5px 3px hsla(241, 100%, 89%,0.2) ;
+}
+.summary-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px ;
+    padding-left:50px;
+    padding-right: 50px;
+   
+}
+
+
+.summ{
+    padding:15px;
+    color:hsl(224, 30%, 27%);
+    
+}
+.rating{
+    display: flex;
+    padding:15px;
+    justify-content: space-between;
+}
+
+.reaction{
+    display: flex;
+    border-radius: 1rem 1rem 1rem 1rem;
+    color:hsl(0, 100%, 67%);
+    background-color:hsl(0, 100%, 67%,0.1);
+
+}
+
+
+.memory{
+    display: flex;
+    border-radius: 1rem 1rem 1rem 1rem;
+    color:hsla(39, 100%, 56%);
+    background-color:hsla(39, 100%, 56%,0.1);
+   
+}
+
+.verbal{
+    display: flex;
+    border-radius: 1rem 1rem 1rem 1rem;
+    color:hsla(166, 100%, 37%);
+    background-color:hsla(166, 100%, 37%,0.1);
+   
+}
+
+.visual{
+    display: flex;
+    border-radius: 1rem 1rem 1rem 1rem;
+    color:hsl(234, 85%, 45%);
+    background-color:hsl(234, 85%, 45%,0.1);
+   
+}
+    
+button
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding:14px;
+    border-radius: 2rem 2rem 2rem 2rem;
+    background:linear-gradient(
+        to bottom,
+       hsl(252, 100%, 67%),
+       hsl(234, 85%, 45%)
+   );
+    color:var(--White);
+}
+
+button:hover{
+    color:var(--White);
+    background-color:var(--lightLavender);
+    opacity: 0.5;
+}
+.reaction:hover{
+    color:hsl(0, 100%, 67%);
+    background-color:hsla(241, 100%, 89%,0.1) ;
+}
+.memory:hover{
+    color:hsla(39, 100%, 56%);
+    background-color:hsla(241, 100%, 89%,0.1) ;
+}
+.verbal:hover{
+    color:hsla(166, 100%, 37%);;
+    background-color:hsla(241, 100%, 89%,0.1) ;
+}
+.visual:hover{
+    color:hsl(234, 85%, 45%);
+    background-color:hsla(241, 100%, 89%,0.1) ;
+}
+.result{
+    color:var(--darkGrayBlue);
+    font-size: large;
+}
+
+.overall{
+    color: hsl(241, 100%, 89%);
+}
+#web{
+    display:block;
+    position:fixed;
+    color:var(--darkGrayBlue);
+    text-decoration: none;
+}
+#web:hover{
+    color:var(--lightRed);
+}
+
+/*media*/
+@media screen and (max-width:1440px){}
+
+
+@media screen and (min-width:768px){}
